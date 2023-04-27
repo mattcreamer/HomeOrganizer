@@ -7,18 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		028CECD729FA2EAE00DBB522 /* PostScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028CECD629FA2EAE00DBB522 /* PostScrollView.swift */; };
+		028CECD929FAC20100DBB522 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028CECD829FAC20100DBB522 /* Post.swift */; };
+		028CECDB29FAC35900DBB522 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028CECDA29FAC35900DBB522 /* PostViewModel.swift */; };
+		028CECDD29FAD4D800DBB522 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028CECDC29FAD4D800DBB522 /* PostDetailView.swift */; };
 		02E48AF729F5BCA20038DE30 /* HomeOrganizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E48AF629F5BCA20038DE30 /* HomeOrganizerApp.swift */; };
 		02E48AF929F5BCA20038DE30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E48AF829F5BCA20038DE30 /* ContentView.swift */; };
 		02E48AFB29F5BCA60038DE30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E48AFA29F5BCA60038DE30 /* Assets.xcassets */; };
 		02E48AFE29F5BCA60038DE30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E48AFD29F5BCA60038DE30 /* Preview Assets.xcassets */; };
+		02E48B0629F5BDC10038DE30 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 02E48B0529F5BDC10038DE30 /* FirebaseAuth */; };
+		02E48B0829F5BDC10038DE30 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 02E48B0729F5BDC10038DE30 /* FirebaseFirestore */; };
+		02E48B0A29F5BDC10038DE30 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 02E48B0929F5BDC10038DE30 /* FirebaseFirestoreSwift */; };
+		02E48B0E29F5BF510038DE30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 02E48B0D29F5BF510038DE30 /* GoogleService-Info.plist */; };
+		02E48B1429F9D8960038DE30 /* HouseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E48B1329F9D8960038DE30 /* HouseScrollView.swift */; };
+		02E48B1C29F9DA670038DE30 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E48B1B29F9DA670038DE30 /* House.swift */; };
+		02E48B1E29F9DA810038DE30 /* HouseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E48B1D29F9DA810038DE30 /* HouseViewModel.swift */; };
+		02E48B2129F9DC3F0038DE30 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 02E48B2029F9DC3F0038DE30 /* FirebaseStorage */; };
+		02E48B2329FA149C0038DE30 /* HouseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E48B2229FA149C0038DE30 /* HouseDetailView.swift */; };
+		02E48B2529FA1E740038DE30 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E48B2429FA1E740038DE30 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		028CECD629FA2EAE00DBB522 /* PostScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScrollView.swift; sourceTree = "<group>"; };
+		028CECD829FAC20100DBB522 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		028CECDA29FAC35900DBB522 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		028CECDC29FAD4D800DBB522 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
 		02E48AF329F5BCA20038DE30 /* HomeOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E48AF629F5BCA20038DE30 /* HomeOrganizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOrganizerApp.swift; sourceTree = "<group>"; };
 		02E48AF829F5BCA20038DE30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02E48AFA29F5BCA60038DE30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02E48AFD29F5BCA60038DE30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02E48B0D29F5BF510038DE30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		02E48B1329F9D8960038DE30 /* HouseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseScrollView.swift; sourceTree = "<group>"; };
+		02E48B1B29F9DA670038DE30 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		02E48B1D29F9DA810038DE30 /* HouseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewModel.swift; sourceTree = "<group>"; };
+		02E48B2229FA149C0038DE30 /* HouseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailView.swift; sourceTree = "<group>"; };
+		02E48B2429FA1E740038DE30 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E48B0629F5BDC10038DE30 /* FirebaseAuth in Frameworks */,
+				02E48B2129F9DC3F0038DE30 /* FirebaseStorage in Frameworks */,
+				02E48B0829F5BDC10038DE30 /* FirebaseFirestore in Frameworks */,
+				02E48B0A29F5BDC10038DE30 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +65,7 @@
 			children = (
 				02E48AF529F5BCA20038DE30 /* HomeOrganizer */,
 				02E48AF429F5BCA20038DE30 /* Products */,
+				02E48B1F29F9DC3F0038DE30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +81,11 @@
 			isa = PBXGroup;
 			children = (
 				02E48AF629F5BCA20038DE30 /* HomeOrganizerApp.swift */,
-				02E48AF829F5BCA20038DE30 /* ContentView.swift */,
+				02E48B1729F9DA0A0038DE30 /* Models */,
+				02E48B1929F9DA2F0038DE30 /* ViewModels */,
+				02E48B1A29F9DA3A0038DE30 /* Views */,
 				02E48AFA29F5BCA60038DE30 /* Assets.xcassets */,
+				02E48B0D29F5BF510038DE30 /* GoogleService-Info.plist */,
 				02E48AFC29F5BCA60038DE30 /* Preview Content */,
 			);
 			path = HomeOrganizer;
@@ -65,6 +97,44 @@
 				02E48AFD29F5BCA60038DE30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02E48B1729F9DA0A0038DE30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				02E48B1B29F9DA670038DE30 /* House.swift */,
+				028CECD829FAC20100DBB522 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		02E48B1929F9DA2F0038DE30 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				02E48B1D29F9DA810038DE30 /* HouseViewModel.swift */,
+				028CECDA29FAC35900DBB522 /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		02E48B1A29F9DA3A0038DE30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				02E48B2429FA1E740038DE30 /* LoginView.swift */,
+				02E48B1329F9D8960038DE30 /* HouseScrollView.swift */,
+				02E48B2229FA149C0038DE30 /* HouseDetailView.swift */,
+				028CECD629FA2EAE00DBB522 /* PostScrollView.swift */,
+				028CECDC29FAD4D800DBB522 /* PostDetailView.swift */,
+				02E48AF829F5BCA20038DE30 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		02E48B1F29F9DC3F0038DE30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,12 @@
 			dependencies = (
 			);
 			name = HomeOrganizer;
+			packageProductDependencies = (
+				02E48B0529F5BDC10038DE30 /* FirebaseAuth */,
+				02E48B0729F5BDC10038DE30 /* FirebaseFirestore */,
+				02E48B0929F5BDC10038DE30 /* FirebaseFirestoreSwift */,
+				02E48B2029F9DC3F0038DE30 /* FirebaseStorage */,
+			);
 			productName = HomeOrganizer;
 			productReference = 02E48AF329F5BCA20038DE30 /* HomeOrganizer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +187,9 @@
 				Base,
 			);
 			mainGroup = 02E48AEA29F5BCA20038DE30;
+			packageReferences = (
+				02E48B0429F5BDC10038DE30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 02E48AF429F5BCA20038DE30 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +206,7 @@
 			files = (
 				02E48AFE29F5BCA60038DE30 /* Preview Assets.xcassets in Resources */,
 				02E48AFB29F5BCA60038DE30 /* Assets.xcassets in Resources */,
+				02E48B0E29F5BF510038DE30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				028CECDD29FAD4D800DBB522 /* PostDetailView.swift in Sources */,
+				028CECDB29FAC35900DBB522 /* PostViewModel.swift in Sources */,
+				02E48B1E29F9DA810038DE30 /* HouseViewModel.swift in Sources */,
+				02E48B2529FA1E740038DE30 /* LoginView.swift in Sources */,
+				028CECD729FA2EAE00DBB522 /* PostScrollView.swift in Sources */,
+				02E48B1429F9D8960038DE30 /* HouseScrollView.swift in Sources */,
+				02E48B2329FA149C0038DE30 /* HouseDetailView.swift in Sources */,
 				02E48AF929F5BCA20038DE30 /* ContentView.swift in Sources */,
+				028CECD929FAC20100DBB522 /* Post.swift in Sources */,
+				02E48B1C29F9DA670038DE30 /* House.swift in Sources */,
 				02E48AF729F5BCA20038DE30 /* HomeOrganizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +428,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02E48B0429F5BDC10038DE30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02E48B0529F5BDC10038DE30 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02E48B0429F5BDC10038DE30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		02E48B0729F5BDC10038DE30 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02E48B0429F5BDC10038DE30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		02E48B0929F5BDC10038DE30 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02E48B0429F5BDC10038DE30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		02E48B2029F9DC3F0038DE30 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02E48B0429F5BDC10038DE30 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02E48AEB29F5BCA20038DE30 /* Project object */;
 }
