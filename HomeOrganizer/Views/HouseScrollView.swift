@@ -12,10 +12,12 @@ import FirebaseFirestoreSwift
 struct HouseScrollView: View {
     @FirestoreQuery(collectionPath: "houses") var houses: [House]
     @State private var  houseSheetIsPresented = false
+    @State private var searchText = ""
+    @State private var logOut = false
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         NavigationStack {
-            List(houses) { house in
+            List(houseResults) { house in
                 NavigationLink {
                     HouseDetailView(house: house)
                 }label: {
@@ -25,14 +27,14 @@ struct HouseScrollView: View {
             }
             .listStyle(.plain)
             .navigationTitle("Available Houses")
-            .navigationBarTitleDisplayMode(.inline)
+            .searchable(text: $searchText)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Log Out") {
                         do {
                             try Auth.auth().signOut()
                             print("Log Out Successful")
-                            dismiss()
+                            logOut.toggle()
                         } catch {
                             print("Could not sign out")
                         }
@@ -47,15 +49,6 @@ struct HouseScrollView: View {
                         Image(systemName: "plus")
                     }
                 }
-                ToolbarItem(placement: .bottomBar) {
-                    
-                    Button {
-                        //TODO: Need a Search Function - search for houses in list !!!
-                    } label: {
-                        Image(systemName: "magnifyingglass.circle.fill")
-                    }
-                    
-                }
             }
             .tint(.accentColor)
             .sheet(isPresented: $houseSheetIsPresented) {
@@ -63,6 +56,18 @@ struct HouseScrollView: View {
                     HouseDetailView(house: House())
                 }
             }
+            .fullScreenCover(isPresented: $logOut) {
+                NavigationStack {
+                    LoginView()
+                }
+            }
+        }
+    }
+    var houseResults: [House] {
+        if searchText.isEmpty {
+            return houses
+        } else {
+            return houses.filter{$0.name.contains(searchText)}
         }
     }
 }

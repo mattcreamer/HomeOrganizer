@@ -41,5 +41,51 @@ class HouseViewModel: ObservableObject {
         }
     }
     
-    //TODO: Delete House Function
+    func deleteHouse(house: House) async -> Bool {
+        let db = Firestore.firestore()
+        
+        if let id = house.id {
+            do {
+                try await db.collection("houses").document(id).delete()
+                return true
+            } catch {
+                print("error deleting")
+                return false
+            }
+        }
+        return false
+    }
+    
+    
+    func saveImage(id: String, image: UIImage) async {
+        let storage = Storage.storage()
+        let storageRef = storage.reference().child("\(id)/image.jpg")
+        
+        let resizedImage = image.jpegData(compressionQuality: 0.2)
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpg"
+        
+        if let resizedImage = resizedImage {
+            do {
+                let metadata = try await storageRef.putDataAsync(resizedImage)
+                print("Metadata: ", metadata)
+                print("Image Saved!")
+            } catch {
+                print("ERROR: uploading image to FirebaseStorage \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func getImageURL(id: String) async -> URL? {
+        let storage = Storage.storage()
+        let storageRef = storage.reference().child("\(id)/image.jpg")
+        
+        do {
+            let url = try await storageRef.downloadURL()
+            return url
+        } catch {
+            return nil
+        }
+        
+    }
 }
